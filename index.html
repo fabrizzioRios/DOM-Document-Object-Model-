@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function fn01 () {
+            document.write("<p style='font-size: 15px; color: red' > Esto es un texto </p>")
+        }
+        function fn02 () {
+            let elementos = document.getElementsByTagName("li");
+            alert(elementos.length);
+        }
+        function fn03 () {
+            let elementos2 = document.getElementById("uno")
+            alert(elementos2.innerHTML)
+            elementos2.innerText = "Hola"
+        }
+
+    </script>
+</head>
+<body>
+    <header>
+        <h1> Bienvenidos </h1>
+    </header>
+    <section>
+        <p onclick="fn01()">
+            Click aqui
+        </p>
+        <p onclick="fn02()">
+            Click aqui 2
+        </p>
+        <p onclick="fn03()">
+            Click aqui 3
+        </p>
+        <ul >
+            <li id="uno">HOLA</li>
+            <li>dos</li>
+            <li>tres</li>
+        </ul>
+    </section>
+    <footer></footer>
+</body>
+</html>
